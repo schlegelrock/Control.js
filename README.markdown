@@ -1,7 +1,6 @@
 # Overview
 
-Controls.js is a light-weight layer build for reusable javascript. The framework helps:
-
+Introducing Controls.js, a light-weight framework on javascript to standardize name-spacing, organize initialization and enforce reusability. The framework helps:
 * Control the HTML api to javascript object
 * Control the name space where the object is created
 * Control when each widget initialized
