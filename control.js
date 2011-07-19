@@ -27,28 +27,28 @@ Control.define = function( namespace ) {
       
       control = originalName   = $( this ).attr( "data-control" );
       config  = originalConfig = $( this ).attr( 'data-config' );
-      config = ( config ) ? eval( [ "(", config, ")" ].join( "" ) ) : {}
+      config = ( config ) ? eval( [ "(", config, ")" ].join( "" ) ) : {};
       
       if ( !scope[ control ] ) {
-        valid = false
+        valid = false;
       } else {
-        valid = true
-        scope = Control[ control ]
+        valid = true;
+        scope = Control[ control ];
       }
     
       if ( valid ) {
         obj = new scope( this, config );
-        status = 'success'
+        status = 'success';
       } else {
         console.log( "Error: The object '" + originalName + "' isn't found. Make sure your dependancies are resolved." );
-        status = 'failure'
+        status = 'failure';
       }      
       
       var logMessage = {
         'CName': originalName,
         'Status': status,
         'config': originalConfig
-      }
+      };
       controlLog.push( logMessage );
       
       $( this ).removeAttr( "data-control" ) // convert to done
