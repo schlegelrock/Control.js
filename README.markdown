@@ -1,6 +1,6 @@
 # Overview
 
-Controls.js is a light-weight framework on javascript to standardize name-spacing, organize initialization, and enforce reusability. The framework helps:
+Controls.js is a light-weight layer build for reusable javascript. The framework helps:
 
 * Control the HTML api to javascript object
 * Control the name space where the object is created
@@ -14,7 +14,7 @@ First include the seed file:
 	
 In HTML, add data-control and data-config attributes to the node getting the action. 
 
-	<a data-contorl="MyControl" data-config="{ config1: 'something' }">...</a>
+	<a data-control="MyControl" data-config="{ config1: 'something' }">...</a>
 	
 At OnDomReady Controls.js will look for the object "Control.MyControl" and create a new instance of it. As arguments it will pass a reference to the anchor tag and the config object. This allows each instance of myControls to be uniquely configured and reusable.
 
