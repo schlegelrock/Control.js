@@ -32,7 +32,7 @@ or inline, if you prefer:
 
 	<a data-controls="{ MyControl1: { config1: 'something1', config2: 'somethingElse1' }, MyControl2: { config1: 'something2', config2: 'somethingElse2' } }">...</a>
 	
-At OnDomReady Controls.js will look for the object "Control.MyControl" or "Control.MyControl1" & "Control.MyControl2" and create a new instance of it. As arguments it will pass a reference to the anchor tag and the config object. This allows each instance of the control to be uniquely configured and reusable.
+At OnDomReady Controls.js will look for the object "Control.MyControl" or "Control.MyControl1" & "Control.MyControl2" and create a new instance of them. As arguments it will pass a reference to the anchor tag and the config object. This allows each instance of the control to be uniquely configured and reusable.
 
 In a second file myControl.js, the javascript object for MyControl would have to be defined and assigned to a function. The guts of this function is your custom code. 
 
